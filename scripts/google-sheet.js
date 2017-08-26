@@ -53,7 +53,10 @@ $("#foo").submit(function(event){
     // if the request failed or succeeded
     request.always(function () {
         // Reenable the inputs
-        $inputs.prop("disabled", false);
+       // $inputs.prop("disabled", false);
+        document.getElementById("$foo").reset();
+         $("#form").hide();
+        $("#thank-you").show();
     });
 
     // Prevent default posting of form
