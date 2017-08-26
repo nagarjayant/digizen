@@ -441,295 +441,244 @@ li.ChooseResolution{
 }
 
 /* ------------------------------------------------------------ *\
-    10.1 Poseidon Form Section
+    Form Section
 \* ------------------------------------------------------------ */
 
+.form-content{
+    max-width:100%;
+    width:940px;
+    margin:0 auto;
+    color:#fff;
+  }
 
-.ef-fr-control.ef-fr-hidden ,
-.ef-fr-validation-message,
-.ef-fr-YesEmailMarketing-wrapper
-{
-  display: none;
+.form-content h1{
+  font-size:35px;
 }
 
-.ef-fr-control.ef-fr-required>label::after {
-  content: " *";
+.form-subheader p {
+    width: 720px;
+  margin:20px auto;
+  font-size:17px;
 }
 
-.container {
-  width: 96%;
-  text-align: center;
-  font-size: 13pt;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.ss_form_header {
+  display:none;
 }
 
-#mc-selector {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #000;
-}
-
-
-#complex-form, [data-form-renderer] {
-  width: 85%;
-}
-.ef-fr-form {
-  text-align: center;
-}
-
-.ef-fr-control {
-  margin-top: 10px;
-  margin-bottom:0;
-  width:46%;
-  float:left;
-  padding:0 15px;
-  position:relative;
-}
-
-.ef-fr-radio-button-wrapper{
+.field_block{
   width:50%;
   float:left;
+  padding:10px;
 }
 
-.ef-fr-WantsBrochure-wrapper,
-.ef-fr-HasAcceptedTerms-wrapper,
-.ef-fr-YesEmailMarketing-wrapper,
-.ef-fr-CustomCheckbox-wrapper{
+.field_block.url_field_type_block{
   width:100%;
   float:left;
-  margin-top: 15px;
-}
-
-
-.ef-fr-control>label, .ef-fr-control>input, .ef-fr-control>textarea, .ef-fr-control:not(.ef-fr-group-DOBStudent)>select, .ef-fr-radio-button-wrapper>div, .ef-fr-radio-button-wrapper>label, .ef-fr-checkbox-wrapper>div {
-  float: left;
-  width: 100%;
-  box-sizing:border-box;
-}
-.ef-fr-control>label, .ef-fr-radio-button-wrapper>label {
-  width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-right: 6px;
-  line-height: 28px;
-  vertical-align: middle;
-}
-.ef-fr-control:not(.ef-fr-checkbox-wrapper)>label {
-  text-align: left;
-}
-.ef-fr-control.ef-fr-checkbox-wrapper>label, .ef-fr-radio-button-wrapper>label {
-   text-align: left;
-   width:auto;
-   margin-left:10px;
-}
-.ef-fr-radio-button-wrapper input{
-  width:auto;
-  float:left;
-  margin-top:10px;
-}
-.ef-fr-radio-button-wrapper > label{
-  width:auto;
-  float:left;
-  padding-left:10px;
-}
-.ef-fr-control>input, .ef-fr-radio-button-wrapper>div>input, .ef-fr-checkbox-wrapper>div>input, .ef-fr-control>.awesomplete>input {
-  padding: 6px 12px;
-  font-size: 14px;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  height:41px;
-}
-
-div.awesomplete{
- display:block !important;
-}
-
-.ef-fr-control>.awesomplete>input{
-  float:left;
-  height: 27px;
-  width: 95%;
-}
-
-.ef-fr-control>textarea{
-  padding: 6px 12px;
-    font-size: 14px;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 100px;
-    resize: none;
-}
-.ef-fr-radio-button-wrapper>div, .ef-fr-checkbox-wrapper>div {
-  text-align: right;
-  margin-right: 10px;
-  margin-top: 6px;
-  width:auto;
-}
-
-.ef-fr-checkbox-wrapper input, .ef-fr-radio-button-wrapper input{
-  width:auto;
-  float:left;
-  margin-top:10px;
-  height:auto;
-}
-
-.ef-fr-control>select {
-  width:100%;
-  display: block;
-  float: left;
-  padding: 6px 12px;
-  font-size: 14px;
-  color: #555;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  height:40px;
-   -webkit-appearance: none;
-  -moz-appearance: none;
- background: rgba(255, 255, 255, 1) url("https://efdigitalmarketing.github.io/templates/assets/icons/Dropdown_arrow.png") no-repeat scroll 98% center;
-}
-
- .ef-fr-control>select:hover{
-  background: rgba(255,255,255,1) url("https://efdigitalmarketing.github.io/templates/assets/icons/Dropup_arrow.png") no-repeat scroll 98% center;
-}
-
-.ef-fr-group-DOBStudent>select{
-  width:32%;
-  margin-right:5px;
-  background: rgba(255, 255, 255, 1) url("https://efdigitalmarketing.github.io/templates/assets/icons/Dropdown_arrow.png") no-repeat scroll 95% center;
-  }
-
-.ef-fr-group-DOBStudent>select:nth-child(3n + 1){
-  margin-right:0;
-}
-
-.ef-fr-group-DOBStudent>select:hover{
-  background: rgba(255, 255, 255, 1) url("https://efdigitalmarketing.github.io/templates/assets/icons/Dropup_arrow.png") no-repeat scroll 95% center;
-}
-
-.ef-fr-control input:focus,
-.ef-fr-control textarea:focus{
- border:1px solid #000;
-}
-
-
-
-.ef-fr-control::after, .ef-fr-radio-button-wrapper::after {
-  display: block;
-  content: '';
-  clear: both;
-  margin-top: 10px;
-}
-.ef-fr-submit {
-    padding:12px 10px;
-    margin: 30px auto 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 250px;
-    float: left;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    color:#fff;
-    background:#000;
-}
-
-.ef-fr-submit:hover{
-  color:#fff;
-  background:#ff008el;
-}
-
-label[for=simple-form-HasAcceptedTerms] a{
-  color:#000;
-}
-
-label[for=simple-form-HasAcceptedTerms]:hover{
- text-decoration:underline;
-}
-
-
-.ef-fr-MobilePhone-wrapper label,
-.ef-fr-AreaCodeHomePhone-wrapper label,
-.ef-fr-HomePhone-wrapper label
-{
-  display: none;
-}
-
-.ef-fr-radio-wrapper ,
-.ef-fr-HomePhone-wrapper{
-    margin-bottom: 0;
-    display:none;
-}
-
-.ef-fr-MobilePhone-wrapper{
-    display: block;
-    margin-top: 10px;
-}
-
-.ef-fr-MobilePhone-wrapper label{
-    display:block;
-}
-
-.ef-fr-AreaCodeHomePhone-wrapper{
-    width: 10%;
-    float: left;
-    padding: 0 0 0 15px;
-    margin-top:0;
-}
-
-.ef-fr-HomePhone-wrapper{
-    width: 38%;
-    float: left;
-    padding: 0 0 0 15px;
-    margin-top:0;
-}
-
-/*validation*/
-.ef-fr-invalid input,
-.ef-fr-invalid select{
-    border-color: #b90000;
-    color: #b90000;
-}
-
-.ef-fr-valid input,
-.ef-fr-valid select{
-    color: #000;
-    background-image: url("https://efdigitalmarketing.github.io/templates/assets/icons/check-green.png");
-    background-size: 12px 8px;
-    background-repeat:no-repeat;
-    background-position: 97%;
-}
-
-
-@media all and (max-width: 767px) {
-  .ef-fr-control {
-    width:100%;
-    float:left;
-    padding:0;
-  }
   
-  .ef-fr-control>.awesomplete>input{
-    float:left;
-    height: 27px;
-    width: 91%;
+}
+.textarea_field_type_block{
+  width:100%;
+  float:left;
+}
+.textarea_field_type_block{
+  display:none;
+}
+.submit_field_block{
+  width:100%;
+}
+.field_block label{
+  width:100%;
+  float:left;
+  padding-bottom:5px;
+  font-size:15px;
+  font-weight:400;
+  color:#fff;
+}
+.field_block label span.required{
+  display:none;
+}
+
+.form-content input{
+  width:100%;
+  float:left;
+  border-radius:5px;
+  padding:15px;
+  border:1px solid #ccc;
+  font-size:15px;
+  
+}
+.form-content textarea{
+  width:100%;
+  float:left;
+  border-radius:5px;
+  padding:15px;
+  border:1px solid #ccc;
+  font-size:15px;
+  resize:none;
+  height:100px;
+  
+  
+}
+.form-content select{
+  width:100%;
+  float:left;
+  border-radius:5px;
+  padding:0px 15px;
+  border:1px solid #ccc;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+    background: rgba(255, 255, 255, 1) url("http://d2xcq4qphg1ge9.cloudfront.net/assets/9704/3199460/original_arrow_down.png") no-repeat scroll 95% center;
+  height:49px;
+  background-size:20px;
+  font-size:15px;
+  font-weight:400;
+}
+
+select.date_select {
+    width: 31%;
+    float: left;
+    margin-right: 10px;
+}
+
+.form_submit{
+  background-color: #fff;
+    border: medium none;
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    font-family: "Helvetica Neue";
+    font-size: 11px;
+   letter-spacing: 0.5px;
+    margin:32px auto 0;
+    padding: 18px 18px 16px;
+    text-transform: uppercase;
+    width: 100%;
+  max-width:240px;
+  text-align:center;
+}
+
+.form_submit:hover{
+ background:#000;
+  color:#fff;
+}
+
+input.form_submit:focus{
+  background-color: #ff595e !important;
+}
+
+option{
+  padding: 10px !important;
+}
+
+select > option:hover{
+  box-shadow: 0 0 10px 100px #000 inset;               
+}
+
+select > option:checked {
+    box-shadow: 0 0 10px 100px #000 inset;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.field_block label.error,
+#message_form,
+#footer_msg_form,
+#footer_form{
+  display:none !important;
+}
+
+.error{
+  border:1px solid #FF595E !important;
+}
+.valid{
+  border:1px solid #ccc !important;
+  color:#000;
+  background:rgba(255,255,255,2) url("http://media2.ef.com/Sites/LanguageSites/2017/dist/images/check-green.png") 95% center no-repeat !important;
+  background-size: 12px 8px !important;
+}
+
+.form-note{
+  width:100%;
+  float:left;
+  text-align:center;
+  padding:30px 0 0;
+  font-size:12px;
+  font-weight:300;
+}
+
+.checkbox_field_type_block {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.checkbox_field_type_block input[type="checkbox"]{
+    width: auto;
+    float: left;
+    margin: 6px 10px 0 0;
+}
+
+.checkbox_field_type_block .main_field_label {
+    width: auto;
+    float: left;
+    cursor: pointer;
+    font-size:15px;
+}
+
+.checkbox_field_type_block .main_field_label:hover{
+    text-decoration:underline;
 }
 
 
-}
+ @media all and (max-width:767px){
+   .form-content{
+     max-width:100%;
+   }
+   .section-form{
+     padding-bottom:80px;
+    
+   }
+   
+   .section-form .sub-header{
+     margin:15px 0;
+   }
+   .section-form .sub-header h1{
+     text-align:center;
+   }
+   .section-form .sub-header p{
+     margin:0 auto;
+     max-width:250px;
+     width:100%;
+     text-align:center;
+     font-size:15px;
+   }
+   .field_block{
+     width:100%;
+     
+   }
+   .form-content select, .form-content textarea, .form-content input{
+     font-size:13px;
+   }
+   .form-content h1{
+     font-size:28px;
+   }
+   
+   .checkbox_field_type_block .main_field_label {
+      width: 90%;
+      float: left;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 1.5px;
+   }
+   
+   select.date_select{
+     width:30%;
+   }
+ }
 
 /**** 4.1 spinner ****/
 .spiner-holder {
@@ -750,61 +699,4 @@ label[for=simple-form-HasAcceptedTerms]:hover{
 
 }
 
-.spiner {
-  position: relative;
-  margin: 50% auto;
-  width: 20px;
-  height: 20px;
-}
-.spiner:before {
-  display: block;
-  content: "";
-  position: absolute;
-  background-image: url("../images/spin.jpg");
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-  width: 104%;
-  height: 104%;
-  -webkit-animation-name: loading;
-          animation-name: loading;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  z-index: 1;
-}
-.spiner:after {
-  display: block;
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  width: 98%;
-  height: 98%;
-  z-index: 0;
-}
 
-@-webkit-keyframes loading {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes loading {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
