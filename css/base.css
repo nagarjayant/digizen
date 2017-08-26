@@ -520,33 +520,19 @@ li.ChooseResolution{
   
   
 }
-.form-content select{
-  width:100%;
-  float:left;
-  border-radius:5px;
-  padding:0px 15px;
-  border:1px solid #ccc;
-  -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-    background: rgba(255, 255, 255, 1) url("http://d2xcq4qphg1ge9.cloudfront.net/assets/9704/3199460/original_arrow_down.png") no-repeat scroll 95% center;
-  height:49px;
-  background-size:20px;
-  font-size:15px;
-  font-weight:400;
+
+.form-content input:focus,
+.form-content textarea:focus{
+   border:1px solid #000;
 }
 
-select.date_select {
-    width: 31%;
-    float: left;
-    margin-right: 10px;
-}
 
-.form_submit{
-  background-color: #fff;
+
+.form-btn{
+  background-color: #000;
     border: medium none;
     border-radius: 5px;
-    color: #000;
+    color: #fff;
     display: block;
     font-family: "Helvetica Neue";
     font-size: 11px;
@@ -560,7 +546,7 @@ select.date_select {
 }
 
 .form_submit:hover{
- background:#000;
+ background:#ff595e;
   color:#fff;
 }
 
@@ -568,29 +554,10 @@ input.form_submit:focus{
   background-color: #ff595e !important;
 }
 
-option{
-  padding: 10px !important;
-}
 
-select > option:hover{
-  box-shadow: 0 0 10px 100px #000 inset;               
-}
 
-select > option:checked {
-    box-shadow: 0 0 10px 100px #000 inset;
-}
 
-select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-}
 
-.field_block label.error,
-#message_form,
-#footer_msg_form,
-#footer_form{
-  display:none !important;
-}
 
 .error{
   border:1px solid #FF595E !important;
@@ -602,37 +569,8 @@ select:-moz-focusring {
   background-size: 12px 8px !important;
 }
 
-.form-note{
-  width:100%;
-  float:left;
-  text-align:center;
-  padding:30px 0 0;
-  font-size:12px;
-  font-weight:300;
-}
 
-.checkbox_field_type_block {
-    width: 100%;
-    float: left;
-    padding: 10px;
-}
 
-.checkbox_field_type_block input[type="checkbox"]{
-    width: auto;
-    float: left;
-    margin: 6px 10px 0 0;
-}
-
-.checkbox_field_type_block .main_field_label {
-    width: auto;
-    float: left;
-    cursor: pointer;
-    font-size:15px;
-}
-
-.checkbox_field_type_block .main_field_label:hover{
-    text-decoration:underline;
-}
 
 
  @media all and (max-width:767px){
