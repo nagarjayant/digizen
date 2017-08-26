@@ -30,6 +30,10 @@ body {
   box-shadow: none;
 }
 
+*{
+box-sizing:border-box
+}
+
 h1, h2 {
   font-weight: 400;
   margin: 0;
